@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio website of Your Name, a student developer interested in software and web development.">
+  <title>Your Name | Student Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- PLACEHOLDERS TO REPLACE (full list also in README.md):
+       Name / initials / logo .... "Your Name", "YN"
+       College ................... "Your College / University"
+       Degree .................... "Your Degree or Course"
+       Study years ............... "20XX - 20XX"
+       Academic score ............ "XX%"
+       Email ..................... "you@example.com"
+       GitHub .................... "https://github.com/your-username" (+ project links)
+       LinkedIn .................. "https://www.linkedin.com/in/your-username"
+       Project cards ............. sample titles, descriptions and links
+  -->
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="#top">
+        <span class="logo__mark" aria-hidden="true">YN</span>
+        <span class="logo__text">Your Name</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Student developer</p>
+          <h1 class="hero__title" id="hero-title">Hi, I'm <span class="accent">Your Name</span></h1>
+          <p class="hero__lead">I build clean, responsive interfaces for the web and I am learning software development one project at a time.</p>
+          <p class="hero__text">I am a college student who enjoys turning small ideas into working websites with HTML, CSS and JavaScript. This site keeps my education, projects and contact details in one place.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View my projects</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__avatar" aria-hidden="true">
+            <span class="hero__initials">YN</span>
+          </div>
+          <p class="hero__caption">HTML &middot; CSS &middot; JavaScript</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">About</p>
+          <h2 class="section__title" id="about-title">A few words about me</h2>
+        </header>
+        <div class="about__grid">
+          <div class="about__text">
+            <p>I am a student at <strong>Your College / University</strong>, studying <strong>Your Degree or Course</strong>. I spend most of my time learning how the web works and practising by building small, complete projects from scratch.</p>
+            <p>I care about layouts that stay readable on every screen, code that is easy to understand, and interfaces that work for keyboard and screen reader users. Replace this paragraph with a short introduction in your own words.</p>
+          </div>
+          <div class="card focus-card">
+            <h3 class="focus-card__title">What I focus on</h3>
+            <ul class="focus-list">
+              <li>Responsive layouts with HTML and CSS</li>
+              <li>Small interactions in vanilla JavaScript</li>
+              <li>Readable, well-organised code</li>
+              <li>Accessibility and design fundamentals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Education</p>
+          <h2 class="section__title" id="education-title">Where I have studied</h2>
+          <p class="section__intro">Placeholder academic details. Replace each entry with your own institution, course, study period and score.</p>
+        </header>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <article class="card timeline__body">
+              <p class="card__period">20XX &ndash; 20XX</p>
+              <h3 class="card__title">Your Degree or Course</h3>
+              <p class="card__org">Your College / University</p>
+              <p class="card__score">Academic score: XX% <span class="card__note">(placeholder)</span></p>
+            </article>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <article class="card timeline__body">
+              <p class="card__period">20XX &ndash; 20XX</p>
+              <h3 class="card__title">Higher Secondary Education</h3>
+              <p class="card__org">Your School Name</p>
+              <p class="card__score">Academic score: XX% <span class="card__note">(placeholder)</span></p>
+            </article>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <article class="card timeline__body">
+              <p class="card__period">20XX &ndash; 20XX</p>
+              <h3 class="card__title">Secondary Education</h3>
+              <p class="card__org">Your School Name</p>
+              <p class="card__score">Academic score: XX% <span class="card__note">(placeholder)</span></p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Projects</p>
+          <h2 class="section__title" id="projects-title">A few projects I have worked on</h2>
+          <p class="section__intro">These are editable sample cards. Replace the titles, descriptions and technology labels with your own work, and point the links at your real repositories. The links below are placeholders only.</p>
+        </header>
+        <div class="projects__grid">
+
+          <article class="card project-card">
+            <div class="project-card__head">
+              <span class="project-card__index" aria-hidden="true">01</span>
+              <span class="project-card__badge">Sample</span>
+            </div>
+            <h3 class="project-card__title">Task Board</h3>
+            <p class="project-card__desc">A single-page task list where you can add, organise and remove items. Tasks are saved in the browser so they stay in place after a refresh.</p>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/your-username/task-board">GitHub</a>
+              <a href="https://your-username.github.io/task-board/">Live demo</a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-card__head">
+              <span class="project-card__index" aria-hidden="true">02</span>
+              <span class="project-card__badge">Sample</span>
+            </div>
+            <h3 class="project-card__title">Recipe Book</h3>
+            <p class="project-card__desc">A searchable recipe index that filters cards by category and keyword, with a layout that moves from three columns on desktop to one column on mobile.</p>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/your-username/recipe-book">GitHub</a>
+              <a href="https://your-username.github.io/recipe-book/">Live demo</a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-card__head">
+              <span class="project-card__index" aria-hidden="true">03</span>
+              <span class="project-card__badge">Sample</span>
+            </div>
+            <h3 class="project-card__title">Weather Snapshot</h3>
+            <p class="project-card__desc">A small weather page that reads data from a public API and shows temperature and conditions inside a simple, readable card layout.</p>
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Fetch API</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/your-username/weather-snapshot">GitHub</a>
+              <a href="https://your-username.github.io/weather-snapshot/">Live demo</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section__title" id="contact-title">Get in touch</h2>
+          <p class="section__intro">Replace the placeholder details below with your own so that people know how to reach you.</p>
+        </header>
+        <div class="contact__grid">
+
+          <div class="contact__info">
+            <h3 class="contact__info-title">Contact details</h3>
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <span class="contact-list__label">Email</span>
+                <a href="mailto:you@example.com">you@example.com</a>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__label">GitHub</span>
+                <a href="https://github.com/your-username">github.com/your-username</a>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/your-username">linkedin.com/in/your-username</a>
+              </li>
+            </ul>
+            <p class="contact__note">All three links above are placeholders and must be changed before you share this site.</p>
+          </div>
+
+          <form class="card contact-form" id="contact-form" action="" method="get">
+            <h3 class="contact-form__title">Send a message</h3>
+
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <p class="form-hint">This form is a front-end demonstration only. Submitting it shows a message in this page; nothing is sent, saved or stored.</p>
+
+            <button class="btn btn--primary contact-form__submit" type="submit">Send message</button>
+
+            <p class="form-status" id="form-status" role="status" tabindex="-1" hidden></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; 2026 Your Name. Built with HTML, CSS and a little JavaScript.</p>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
